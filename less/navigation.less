@@ -1,1 +1,43 @@
 // Navigation code here
+nav {
+    background-color: @nav-bg;
+    padding: 2%;
+
+    @media @mobile {
+        padding: 4%;
+    }
+
+    .logo {
+        .flex(row, center);
+        padding-bottom: 2%;
+
+        a {
+            font-family: 'Russo One', sans-serif;
+            font-size: 4em;
+            .sexy-links;
+
+            @media @mobile {
+                font-size: 4em;
+            }
+        }
+    }
+
+    .nav-links {
+        .flex(row, space-between);
+        width: 50%;
+        margin: 0 auto;
+
+        @media @mobile {
+            width: 75%;
+        }
+
+        a {
+            font-size: 1.8em;
+            .sexy-links;
+
+            @media @mobile {
+                font-size: 1.5em;
+            }
+        }
+    }
+}
