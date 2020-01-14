@@ -1,1 +1,29 @@
 // Mixins Here
+
+.flex(@direction, @justify) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+}
+
+.sexy-links {
+    text-decoration: none;
+    color: @nav-font;
+}
+
+.sign-up-btn(@color, @align, @border, @pad, @width) {
+    background-color: @btn-bg-color;
+    color: @color;
+    font-size: 1.8em;
+    font-weight: 500;
+    text-align: @align;
+    border-radius: @border;
+    padding: @pad;
+    width: @width;
+
+    &:hover {
+        background-color: @porcelain;
+        color: @btn-bg-color;
+        border: 1px solid @btn-bg-color;
+    }
+}
